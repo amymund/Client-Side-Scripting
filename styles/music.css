@@ -1,14 +1,14 @@
 :root {
     /* colors */
-    --primary-color: #dfdfe2;
+    --primary-color: #ffffff;
     --secondary-color: #ffffff;
-    --app-background-color: #4d4d62;
-    --background-color: #1b1b32;
-    --foreground-color: #3b3b4f;
-    --highlight-color: #f1be32;
+    --app-background-color: #36fa4d;
+    --background-color: #e902e2;
+    --foreground-color: #ff73ea;
+    --highlight-color: #f6ff00;
   
     /* font sizes */
-    --root-font-size: 16px;
+    --root-font-size: 18px;
     font-size: var(--root-font-size);
   
     /* font-families */
@@ -31,6 +31,7 @@
   h1 {
     font-size: 1.125rem;
     line-height: 1.6;
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
   }
   
   h2 {
@@ -95,7 +96,8 @@
   .playlist-title {
     color: var(--secondary-color);
     margin: 0 10px;
-    font-family: var(--font-headline);
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  letter-spacing: 2px;
   }
   
   .player-content {
@@ -110,22 +112,24 @@
   
   #player-album-art {
     background-color: var(--secondary-color);
-    border: 6px solid var(--background-color);
+    border: 5px solid var(--background-color);
   }
   
   #player-album-art img {
     width: 150px;
     display: block;
+    flex-direction: column;
   }
   
   .player-display {
-    display: flex;
+    display: contents;
     flex-direction: column;
     row-gap: 20px;
     padding: 14px;
     background-color: var(--background-color);
     height: 153px;
     width: 226px;
+    
   }
   
   .player-display-song-artist {
@@ -134,6 +138,7 @@
   
   .player-buttons svg {
     fill: var(--primary-color);
+
   }
   
   .playing > svg {
@@ -143,6 +148,8 @@
   .player-buttons {
     display: flex;
     justify-content: space-around;
+    padding-top: 100px;
+
   }
   
   button {
@@ -165,8 +172,9 @@
   
   button:focus,
   .playlist-song:focus {
-    outline-style: dashed;
+    outline-style: solid;
     outline-width: 2px;
+    padding: 6px;
   }
   
   /* Playlist */
