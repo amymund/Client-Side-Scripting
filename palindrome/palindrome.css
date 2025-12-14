@@ -1,0 +1,82 @@
+:root {
+    --gray: #BDBEBF;
+    --bright-green: #C8F230;
+    --pale-green: #D5F26D;
+--dark-green: #50592D;
+--army-green: #898C2B;
+}
+
+body {
+  background-image: linear-gradient(to bottom, var(--pale-green), var(--bright-green));
+height: 100vh;
+font-family: "Arimo", sans-serif;
+text-align: center;
+}
+
+h1 {
+    font-family: "BBH Hegarty", sans-serif;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: var(--dark-green);
+    margin: 0 auto;
+}
+
+h2 {
+    position: static;
+    margin: auto;
+    padding-bottom: 5px;
+    margin: 0 auto;
+}
+
+p {
+    margin: 0 auto;
+    padding-bottom: 20px;
+    font-family: "Arimo", sans-serif;
+}
+
+.button {
+    background-image: linear-gradient(to bottom, var(--dark-green), var(--army-green));
+    /* background-image: linear-gradient(to bottom, rgb(214, 214, 214) 20%, var(--gray) 80%); */
+font-family: "BBH Hegarty", sans-serif;
+height: 45px;
+font-size: 25px;
+width: auto;
+margin: 0 auto;
+color: rgb(240, 240, 240);
+text-shadow: 2px 2px black;
+letter-spacing: 2px;
+border: 3px solid black;
+}
+
+button:hover {
+    background-image: linear-gradient( to bottom, var(--army-green), var(--dark-green));
+  }
+
+.text-input {
+    height: 40px;
+    width: auto;
+    border: 2px solid black;
+    margin: 0 auto;
+    font-family: "DM Sans", sans-serif;
+    font-size: 30px;
+    box-shadow: 0 0 5px #4CAF50; 
+    padding-left: 10px;
+    padding-bottom: 5px;
+
+}
+
+.text-input:focus {
+    border-color: var(--army-green);
+    outline: var(--bright-green);
+    background-color: rgb(240, 238, 238);
+    color: var(--dark-green);
+}
+
+.result {
+    padding-top: 30px;
+    font-size: 25px;
+    color: var(--dark-green);
+    font-weight:800;
+    letter-spacing: 0.5px;
+margin: 0 auto;
+}
